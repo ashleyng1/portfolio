@@ -8,7 +8,7 @@ All data-related projects
 
 <img align="left" width="250" height="150" src="https://github.com/archd3sai/Portfolio/blob/master/Images/telecom.jpg"> **[Computational Social Science: Meta Analysis of letters to Warren/ Doris Buffett](https://github.com/archd3sai/Customer-Survival-Analysis-and-Churn-Prediction)**
 
-During my internship with [Incite @ Columbia University](https://incite.columbia.edu/), an interdisciplinary research institute at Columbia University, I was part of the Buffett Letters project with Professor Peter Bearman as the Principal Investigator. This project aims to analyze a unique digitized archive of about 10,000 letters written to Warren Buffett and his sister, Doris, between 2006 and 2016 from those around the United States, mostly asking for financial assistance. The letters provide an acute window into both extreme poverty and relative hardship.
+During my internship with [Incite @ Columbia University](https://incite.columbia.edu/), an interdisciplinary research institute, I was part of the Buffett Letters project with Professor Peter Bearman as the Principal Investigator. This project aims to analyze a unique digitized archive of about 10,000 letters written to Warren Buffett and his sister, Doris, between 2006 and 2016 from those around the United States, mostly asking for financial assistance. The letters provide an acute window into both extreme poverty and relative hardship.
 
 I completed 2 main tasks:
 1. Used the United States Census Bureau API to tabulate all the relevant variables down to ZIP code (ZTCA5) level from 2000-2016
