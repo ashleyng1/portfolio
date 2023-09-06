@@ -4,12 +4,6 @@ All data-related projects
 - **Email**: [htn2006@nyu.edu](htn2006@nyu.edu)
 - **LinkedIn**: [linkedin.com/ashley](https://www.linkedin.com/in/ashley-nguyen-26a5291b7/)
 
-## Achievements
-- Recipient of Outstanding Master of Engineering - Industrial Engineering Student Award.
-- [Publication](https://phmpapers.org/index.php/phmconf/article/view/1292): Prognosis of Wind Turbine Gearbox Bearing Failures using SCADA and Modeled Data, Proceedings of the Annual Conference of the PHM Society 2020, Vol. 12 No. 1.
-- Winner of a TAMU Datathon 2020 among 50+ teams.
-- Recipient of TAMU Scholarship and Fee Waiver for excellent academic performance (4.0 GPA).
-
 ## Projects
 
 <img align="left" width="250" height="150" src="https://github.com/archd3sai/Portfolio/blob/master/Images/telecom.jpg"> **[Computational Social Science: Meta Analysis of letters to Warren/ Doris Buffett](https://github.com/archd3sai/Customer-Survival-Analysis-and-Churn-Prediction)**
@@ -43,6 +37,12 @@ In this project I have used models such as RNN, LSTM, 1D-CNN to predict the engi
 #
 
 <img align="left" width="250" height="150" src="https://github.com/archd3sai/Portfolio/blob/master/Images/960x0.jpg"> **[ESG ratings on equity performance in the 3 financial markets (US, Europe, Japan)](https://github.com/archd3sai/Wind-Turbine-Power-Curve-Estimation)**
+
+In this project, I have employed regression techniques to estimate the Power curve of an on-shore Wind turbine. Nonlinear trees based regression methods perform best as true power curve is nonlinear. XGBoost is implemented and optimized using GridSearchCV which yields lowest Test RMSE-6.404.
+
+#
+
+<img align="left" width="250" height="150" src="https://github.com/archd3sai/Portfolio/blob/master/Images/960x0.jpg"> **[Regression Techniques and Analysis to find the impact on marriage duration in Mexico](https://github.com/archd3sai/Wind-Turbine-Power-Curve-Estimation)**
 
 In this project, I have employed regression techniques to estimate the Power curve of an on-shore Wind turbine. Nonlinear trees based regression methods perform best as true power curve is nonlinear. XGBoost is implemented and optimized using GridSearchCV which yields lowest Test RMSE-6.404.
 
