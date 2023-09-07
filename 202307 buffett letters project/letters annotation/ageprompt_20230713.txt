@@ -1,0 +1,232 @@
+For each of the following letters, please provide the age of the author at the time of writing, if stated in the letter. If age is not stated, then please write, 'age not stated.'
+
+If the author's age is not stated in the letter, then please do each of the following:
+
+1. Generate a point estimate of the author's age at the time of writing. To make the estimate, please use direct age-related information about the author, such as their birth year, age at a specific point in time, being a veteran of a specific war, or life milestones that typically occur at certain ages (e.g., high school or college graduation, marriage, having children). You may also use age-related information about the author's children, the author's parents, or the author's spouse, which could be used to estimate the author's age indirectly. When making your estimate, please keep in mind the following rules:
+- People are 18-42 years older than their children, and 18-42 years younger than their parents 
+- There is a median age difference of 24 years between first-born children and their mothers, and there is a median age difference of 26 years between first-born children and their fathers
+- People tend to attend college between the ages of 18 and 22 
+- People tend to attend high school between the ages of 14 and 18 
+- People tend to get married at age 20 and older, and so are typically at least 20 years older than the length of time they have been married
+- When people describe children as 'young children' or 'small children', they typically mean that those children are 10 years old or younger
+
+If there is enough information to estimate that the author is 65 years old or older, but not enough to information to make a point estimate, then please write '>=65' as your estimate.
+
+**If the letter does not provide direct age-related information about the author, their children, their parents, or their spouse, and if it does not provide sufficient context to make assumptions about the author's age, then please write 'insufficient age information' in place of an age estimate. 
+For example, if the writer says they are on social security but does not mention any other information to suggest that they are a senior citizen, then there is not necessarily sufficient information to make an estimate. That someone has retired early, or that they receive social security, is not enough information to make any age estimate. 
+
+2. For the author and for each of the author's children, parents, and/or spouses/partners for whom age-related information is provided, please provide the following information:
+- The age of the person, if stated in the letter. If not stated, then write 'no age stated.'
+- Summary of information in the letter that informs an age estimate for the person. 
+- Quotations from the text that provide information that might inform an age estimate for the person. If no such statements exist, then reply 'no age information.' 
+
+Examples of age-related information include, among others:
+- Year a person was born 
+- Year a person was married 
+- Duration of marriage 
+- Duration of career 
+- Year began working 
+- Year in college and/or year graduated college 
+- Year in high school and/or year graduated high school 
+- Year in preschool or elementary school 
+-  Veteran of X war (e.g. 'I served in Vietnam', 'My father is a veteran of the Korean War') 
+- Any of the above information in reference to a particular year (e.g. 'In 1993, I was 17 years old', 'In 2002 my son was entering preschool.') 
+- On social security 
+- If someone is a 'senior citizen' 
+- If someone has an age-specific medical condition 
+- If someone is a 'young' or 'small' child 
+
+Finally, please indicate if the writer is not writing for themselves but for someone else. If they are writing for someone else (and not for themselves) then please note whom the author is writing for, and make an age estimate for this person, using the same process you used to estimate the authors age (i.e. the process described above). That is, report the age if stated, and if the age is not stated, then generate a point estimate, and list any age-related information about the person and their children, parents, and /or spouses that might be used to indirectly estimate their age. 
+
+For example, here is a letter:  
+'Date written: December 8th, 2013 
+Author's gender: f
+
+Dear Amy, 
+I am a single mother of three. I have two children at home, [redacted] and [redacted] are both in high school. My eldest [redacted] is in college. My mother was born in 1935 and when she was growing up in the 40s in her family it was expected that you work from age 14, which is what she did. At 80 my father is still playing basketball but I fear that he will not be healthy forever and would love to live nearer to him.'
+
+Age of author: no age stated 
+Age-related information for author: single mother of three children 
+Age statements for author: 'I am a single mother of three.' 
+
+Age of author's child 1: no age stated 
+Age-related information for author's child 1: in high school 
+Age statements for author's child 1: 'I have two children at home, [redacted] and [redacted] are both in high school.' 
+
+Age of author's child 2: no age stated 
+Age-related information for author's child 2: in high school 
+Age statements for author's child 2: 'I have two children at home, [redacted] and [redacted] are both in high school.'
+
+Age of author's child 3: no age stated 
+Age-related information for author's child 3: in college 
+Age statements for author's child 3:  'My eldest [redacted] is in college.'
+
+Age of author's mother:  78 
+Age-related information for author's mother: born in 1935
+Age statements for author's mother: 'My mother was born in 1935 and when she was growing up in the 40s in her family it was expected that you work from age 14, which is what she did.' 
+
+Age of author's father: 80 
+Age-related information for author's father: 80 
+Age statements for author's father: 'At 80 my father is still playing basketball but I fear that he will not be healthy forever and would love to live nearer to him.' 
+
+Age estimate for author: 50 
+
+Is the author writing for someone else? No
+
+Example 2: 
+'Wednesday, January 02, 2008 
+Author's gender: f
+
+Hello my name is [redacted]. My family and I live in Evanston, Illinois. My husband and I have three children. [redacted] 13, [redacted] 11 and [redacted] 8. I'm not too sure how to start this letter. 
+
+I guess I will start by giving you all a little history of myself and my family. I was raised by a single mom. My dad was an alcoholic and abusive. I need say no more, as you know what that can be like for a child. My parents divorced when I was ten years old. My mother then married another man who was at first seemed like an answered prayer for my mother and I. He had money, something we had never had before. At first it was good, but that all ended very fast. He was a master drug lord- you might say. Money, drugs, guns abusive, mentally and physically. I had seen it all in a very long/short 4-5 years. (My mother is now living on social security and doing ok. My dad has Alzeimers.)
+
+After high school I married my high school sweetheart [redacted]. It was rough our first year or two. 
+
+[redacted] has worked various jobs throughout our 14 years of marriage. He has been employed as a night supervisor for the last 8 years. My educational background was also very limited. It was one of the hardest thing I have ever accomplished. I did get through it, I made it! I was the first one in my entire family to ever go to college. It was only by the grace of God and lots of prayers and me staying in prayer did I make it. I have now been nursing for about 9 years. I had found my calling in life. ' 
+
+Age of author: no age stated 
+Age-related information for author: married for 14 years, nursing for 9 years 
+Age statements for author: 'After high school I married my high school sweetheart [redacted]...[redacted] has worked various jobs throughout our 14 years of marriage...I have now been nursing for about 9 years.' 
+
+Age of author's child 1: 13 
+Age-related information for author's child 1: 13 years old 
+Age statements for child 1: '[redacted] 13, [redacted] 11 and [redacted] 8.' 
+
+Age of author's child 2: 11 
+Age-related information for child 2: 11 years old 
+Age statements for author's child 2: '[redacted] 13, [redacted] 11 and [redacted] 8.' 
+
+Age of author's child 3: 8 
+Age-related information for author's child 3: 8 years old 
+Age statements for author's child 3: '[redacted] 13, [redacted] 11 and [redacted] 8.' 
+
+Age of author's mother: no age stated 
+Age-related information for author's mother: divorced when author was 10, living on social security 
+Age statements for author's mother: 'My parents divorced when I was ten years old. My mother then married another man...My mother is now living on social security and doing ok.' 
+
+Age of author's father: no age stated 
+Age-related information for author's father: has Alzeimers 
+Age statements for author's father: 'My dad has Alzeimers.' 
+
+Age of author's spouse: no age stated 
+Age-related information for author's spouse: married for 9 years, working as night supervisor for 8 years 
+Age statements for author's spouse: 'After high school I married my high school sweetheart [redacted]...[redacted] has worked various jobs throughout our 14 years of marriage. He has been employed as a night supervisor for the last 8 years.' 
+
+Age estimate for author: 37
+
+Is the author writing for someone else? No
+
+Here is another letter:
+'12/9/08 
+Author's gender: m
+
+Dear Mr Warren Buffett,
+
+Hi! We are a small family of three, in debt of $37,000.00 and would like your help to get us out of debt. We have tried repeatedly to achieve debt free status on our own and are unable to do this. When we get debt free we are going to stay there. Thank-you.
+
+Sincerely,
+
+[redacted]
+
+P.S. Have a very Merry Christmas [Christmas tree drawing] + A VERY HAPPY NEW YEAR [wine glass drawing]'
+
+Age of author: no age stated 
+Age-related information for author: no information
+Age statements for author: none 
+
+Age estimate for author: insufficient information 
+
+Is the author writing for someone else? No
+
+Here is another letter:
+‘Date: 01-09-2007
+Author’s gender: m
+
+Hi, I have a young child, age 5. I could use help.’
+
+Age of author: no age stated 
+Age-related information for author: has a 5 year-old child
+Age statements for author: ‘’I have a young child, age 5.’’ 
+
+Age of author’s child: 5
+Age-related information for author’s child: 5 years old
+Age statements for author’s child: ‘I have a young child, age 5.’
+
+Age estimate for author: 31 
+
+Is the author writing for someone else? No
+
+Here is another letter:
+'Date: 05-06-2014
+Author's gender: f
+
+Dear Ben,
+I live with my 73 year-old grandmother. We could use home repairs. Thanks.'
+
+Age of author: no age stated 
+Age-related information for author: no information
+Age statements for author: none 
+
+Age estimate for author: insufficient information 
+
+Is the author writing for someone else? No
+
+Here is another letter:
+‘Date: 05-16-2006
+Author’s gender: m
+
+Dear Ben,
+I live with my 73 year-old mother. We could use home repairs. Thanks.'
+
+Age of author: no age stated 
+Age-related information for author: no information
+Age statements for author: none 
+
+Age of author's mother: 73 
+Age-related information for author's mother: 73 years old 
+Age statements for author's mother: 'I live with my 73 year-old mother.'
+
+Age estimate for author: 49
+
+Is the author writing for someone else? No
+
+Here is another letter:
+'Date: 05/15/2012
+Author's gender: f
+
+Hi,
+I am writing for my neighbor, [redacted]. She lives alone, her children are all grown and living elsewhere, and her husband passed away recently. She lives on social security, and her home is in rough shape. She is struggling to pay for home repairs.'
+
+Age of author: no age stated
+Age-related information for author: no information
+Age statements for author: none
+
+Age estimate for author: insufficient information
+
+Is the author writing for someone else? Yes
+The author is writing for: author's neighbor
+
+Age of author's neighbor: no age stated
+Age-related information for author's neighbor: Children are grown, husband passed away, living on social security
+Age statements for author's neighbor: '...her children are all grown and living elsewhere, and her husband passed away recently. She lives on social security...'
+
+Age of author's neighbor's children: no age stated
+Age-related information for author's neighbor's children: grown up
+Age-related information for author's neighbor's children: '...her children are all grown and living elsewhere...'
+
+Age estimate for author's neighbor: >=65
+
+Here is another letter:
+'date: 06/23/2006
+author's gender: m
+
+Hi, I'm disabled and living on social security. could use help.'
+
+Age of author: no age stated
+Age-related information for author: living on social security
+Age statements for author: 'I'm disabled and living on social security.'
+
+Age estimate for author: insufficient information
+
+Here is another letter:

@@ -1,0 +1,8 @@
+abuse = ['abus','domestic violence']
+scholarship = ["scholarship","financial aid","tuition"]
+ms = ['sclerosis', 'M.S','MS']
+vehicle = ['used car', 'used or new car', 'used truck','used van','vehicle','new car']
+jail = ['prison','jail','incarcerate']
+children = ['special need']
+housing = ['mortgage','foreclos']
+cancer = ['cancer']
