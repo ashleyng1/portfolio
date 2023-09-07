@@ -6,7 +6,7 @@ All data-related projects
 
 ## Projects
 
-<img align="left" width="250" height="150" src="https://raw.githubusercontent.com/ashleyng1/portfolio/main/images/buffett.jpeg"> **[Computational Social Science: Meta Analysis of letters to Warren/ Doris Buffett - Python](https://github.com/ashleyng1/portfolio/tree/main/202307%20buffett%20letters%20project)**
+<img align="left" width="250" height="150" src="https://github.com/ashleyng1/portfolio/blob/1b880a9131af4474fbbd165d7afc6ed0ab458eb3/images/buffett.jpeg"> **[Computational Social Science: Meta Analysis of letters to Warren/ Doris Buffett - Python](https://github.com/ashleyng1/portfolio/tree/main/202307%20buffett%20letters%20project)**
 
 During my internship with [Incite@Columbia University](https://incite.columbia.edu/), an interdisciplinary research institute, I was part of the Buffett Letters project with Professor Peter Bearman as the Principal Investigator. This project aims to analyze a unique digitized archive of about 10,000 letters written to Warren Buffett and his sister, Doris, between 2006 and 2016 from those around the United States, mostly asking for financial assistance. The letters provide an acute window into both extreme poverty and relative hardship.
 
