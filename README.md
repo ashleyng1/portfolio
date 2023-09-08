@@ -6,7 +6,7 @@ All data-related projects
 
 ## Projects
 
-<img align="left" width="250" height="150" src="./images/buffett.jpeg"> **[Computational Social Science: Meta Analysis of letters to Warren/ Doris Buffett - Python](./202307%20buffett%20letters%20project/README.md)**
+<img align="left" width="250" height="150" src="./images/buffett.jpeg"> **[Computational Social Science: Meta Analysis of letters to Warren/ Doris Buffett - Python](./202307%20buffett%20letters%20project/)**
 
 During my internship with [Incite@Columbia University](https://incite.columbia.edu/), an interdisciplinary research institute, I was part of the Buffett Letters project with Professor Peter Bearman as the Principal Investigator. This project aims to analyze a unique digitized archive of about 10,000 letters written to Warren Buffett and his sister, Doris, between 2006 and 2016 from those around the United States, mostly asking for financial assistance. The letters provide an acute window into both extreme poverty and relative hardship.
 
@@ -16,7 +16,7 @@ I completed 2 main tasks:
 
 #
 
-<img align="left" width="250" height="150" src="./images/fintech.jpeg"> **[Detection of Deadpool Start-up Companies as an additional feature to increase the accuracy of the Base ML risk assessment model - Python](./202305%20deadpool%20startups/README.md)**
+<img align="left" width="250" height="150" src="./images/fintech.jpeg"> **[Detection of Deadpool Start-up Companies as an additional feature to increase the accuracy of the Base ML risk assessment model - Python](./202305%20deadpool%20startups/)**
 
 I led and excuted a project that detected deadpool startups (firms continue to appear to be active in databases although they have stopped trading) from a confidential dataset of 16000 private companies at [Liquidity Capital](https://www.liquiditygroup.com/). Using some EDA techniques and my financial knowledge, I came up with a few features such as Google Search interest, tax filing status, burn rate, and some features on Crunchbase to filter down to a set of 1000 companies. This works as an additional feature for their proprietary base ML model (which assesses risk level of startups as a criteria for investment decision) to reduce errors. 
 
