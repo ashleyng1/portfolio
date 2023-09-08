@@ -1,230 +1,72 @@
-# Customer Survival Analysis and Churn Prediction
-
-App: https://churn-prediction-app.herokuapp.com/
-
-Customer attrition, also known as customer churn, customer turnover, or customer defection, is the loss of clients or customers.
-
-Telephone service companies, Internet service providers, pay TV companies, insurance firms, and alarm monitoring services, often use customer attrition analysis and customer attrition rates as one of their key business metrics because the cost of retaining an existing customer is far less than acquiring a new one. Companies from these sectors often have customer service branches which attempt to win back defecting clients, because recovered long-term customers can be worth much more to a company than newly recruited clients.
-
-Predictive analytics use churn prediction models that predict customer churn by assessing their propensity of risk to churn. Since these models generate a small prioritized list of potential defectors, they are effective at focusing customer retention marketing programs on the subset of the customer base who are most vulnerable to churn.
-
-In this project I aim to perform customer survival analysis and build a model which can predict customer churn. I also aim to build an app which can be used to understand why a specific customer would stop the service and to know his/her expected lifetime value.  
-
-## Final Customer Churn Prediction App
-<img src=https://github.com/archd3sai/Customer-Survival-Analysis-and-Churn-Prediction/blob/master/app-pic.png>
-
-## Project Organization
-```
-.
-├── Images/                             : contains images
-├── static/                             : plots to show gauge chart, hazard and survival curve, shap values in Flask App 
-│   └── images/
-│       ├── hazard.png
-│       ├── surv.png
-│       ├── shap.png
-│       └── new_plot.png
-├── templates/                          : contains html template for flask app
-│   └── index.html
-├── Customer Survival Analysis.ipynb    : Survival Analysis kaplan-Meier curve, log-rank test and Cox-proportional Hazard model
-├── Exploratory Data Analysis.ipynb     : Data Analysis to understand customer data
-├── Churn Prediction Model.ipynb        : Random Forest model to predict customer churn
-├── app.py                              : Flask App
-├── app-pic.png                         : Final App image  
-├── explainer.bz2                       : Shap Explainer
-├── model.pkl                           : Random Forest model
-├── survivemodel.pkl                    : Cox-proportional Hazard model
-├── requirements.txt                    : requirements to run this model
-├── Procfile                            : procfile for app deployment
-├── LICENSE.md                          : MIT License
-└── README.md                           : Report
-```
-
-## Customer Survival Analysis
-
-**Survival Analysis:** 
-Survival analysis is generally defined as a set of methods for analyzing data where the outcome variable is the time until the occurrence of an event of interest. The event can be death, occurrence of a disease, marriage, divorce, etc. The time to event or survival time can be measured in days, weeks, years, etc.
-
-For example, if the event of interest is heart attack, then the survival time can be the time in years until a person develops a heart attack.
+# Project Name: [Detection of Deadpool Startups](./)
 
-**Objective:**
-The objective of this analysis is to utilize non-parametric and semi-parametric methods of survival analysis to answer the following questions.
-- How the likelihood of the customer churn changes over time?
-- How we can model the relationship between customer churn, time, and other customer characteristics?
-- What are the significant factors that drive customer churn?
-- What is the survival and Hazard curve of a specific customer?
-- What is the expected lifetime value of a customer?
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**Kaplan-Meier Survival Curve:**
+## Project Overview
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/SurvivalCurve.png" width="400" height="300">
-</p>
+Welcome to the "Detection of Deadpool Startups" project. This project focuses on identifying and analyzing startups that may be in the "deadpool," meaning they are inactive or no longer operational. We employ various data sources and methods to achieve this goal, as detailed below.
 
-From above graph, we can say that
-- AS expected, for telcom, churn is relatively low. The company was able to retain more than 60% of its customers even after 72 months.
-- There is a constant decrease in survival probability probability between 3-60 months.
-- After 60 months or 5 years, survival probability decreases with a higher rate. 
+## Table of Contents
 
-**Log-Rank Test:** 
+- [Project Overview](#overview)
+- [Data](#data)
+- [Methods](#methods)
+- [Results](#results)
+- [Conclusion](#conclusion)
 
-Log-rank test is carried out to analyze churning probabilities group wise and to find if there is statistical significance between groups. The plots show survival curve group wise.
+## Data
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/gender.png" width="250" height="200"/> 
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/Senior%20Citizen.png" width="250" height="200"/>
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/partner_1.png" width="250" height="200"/> 
-</p>
+ The original dataset comprises a list of 35,000 private companies with their risk score  which is proprietary and confidential and a few other features from Pitchbook to help the analysis such as Last Funding Date, Last Funding Amount, Founded Year, etc.
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/dependents.png" width="250" height="200"/> 
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/phoneservice.png" width="250" height="200"/>
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/MultipleLines.png" width="250" height="200"/> 
-</p>
+## Methods
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/InternetService.png" width="250" height="200"/> 
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/OnlineSecurity.png" width="250" height="200"/> 
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/OnlineBackup.png" width="250" height="200"/> 
-</p>
+### 1. Existing Features:
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/DeviceProtection.png" width="250" height="200"/> 
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/TechSupport.png" width="250" height="200"/>
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/Contract.png" width="250" height="200"/> 
-</p>
+I used the Last Funding Date, Last Funding Amount, Number of Funding Rounds to calculate the burn rate and filter down a smaller set of companies.
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/StreamingMovies.png" width="250" height="200"/>
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/paymentmethod.png" width="250" height="200"/> 
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/PaperlessBilling.png" width="250" height="200"/>
-</p>
+### 2. External Features:
 
-From above graphs we can conclude following:
-- Customer's Gender and the phone service type are not indictive features and their p value of log rank test is above threshold value 0.05.
-- If customer is young and has a family, he or she is less likely to churn. The reason might be the busy life, more money or another factors.
-- If customer is not enrolled in services like online backup, online security, device protection, tech support, streaming Tv and streaming movies even though having active internet service, the survival probability is less.
-- The company should traget customers who opt for internet service as their survival probability constantly descreases. Also, Fiber Optilc type of Internet Service is costly and fast compared to DSL and this might be the reason of higher customer churning. 
-- More offers should be given to customers who opt for month-to-month contract and company should target customers to subscribe for long-term service. 
-- If customer's paying method is automatic, he or she is less likely to churn. The reason is in the case of electronic check and mailed check, a customer has to make an effort to pay and it takes time.
+The **get_features** folder contains a set of notebooks and scripts used to obtain external features crucial for identifying deadpool startups:
 
-**Survival Regression:**
-I use cox-proportional hazard model to perform survival regression analysis on customer data. This model is used to relate several risk factors or exposures simultaneously to survival time. In a Cox proportional hazards regression model, the measure of effect is the hazard rate, which is the risk or probability of suffering the event of interest given that the participant has survived up to a specific time. The model fits the data well and the coefficients are shown below.
+   - **active.ipynb**: This notebook retrieves new domain information when a browser opens the websites of the 35,000 companies.
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Survival-Analysis-and-Churn-Prediction/blob/master/Images/Survival-analysis.png" width="750" height="500"/>
-</p>
+   - **crunchbase.ipynb**: This notebook manually inputs a list of companies into the Crunchbase search engine and employs a web scraper extension (Web Scraper Google Chrome extension) to collect data on Acquisition Status, Operating Status, and SEMrush Website Monthly Visits. Due to limitations, multiple CSV files were used, which were later concatenated into a comprehensive `crunchbase.csv` file containing details for all 5,963 companies.
 
-Using this model we can calculate the survival curve and hazard curve of any customer as shown below. These plots are useful to know the remaining life of a customer. 
+   - **keyword.ipynb**: This notebook uses the `pytrends` library to gather data on the number of weekly Google searches for keywords associated with the companies over the past year (52 weeks). The list of 35,000 companies is split into smaller sets for analysis.
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Survival-Analysis-and-Churn-Prediction/blob/master/Images/survival.png" width="400" height="300"/>
-<img src="https://github.com/archd3sai/Customer-Survival-Analysis-and-Churn-Prediction/blob/master/Images/hazard.png" width="400" height="300"/>
-</p>
+   - **Tax.ipynb**: This notebook accesses the API of the corporate registration website for the states of California and Idaho, gathering details about tax filings or tax status for companies founded in these states.
 
-**Customer Lifetime Value:**
+The **external_features** folder contains data obtained from various external sources:
 
-To calculate customer lifetime value, I would multiply the Monthly charges the customer is paying to Telcom and the expected life time of the customer.
+   - **corporate registration**: This subfolder lists all U.S. states and their respective corporate registration websites, providing information on name searches and tax statuses for registered companies.
 
-I utilize the survival function of a customer to calculate its expected life time. I would like to be little bit conservative and consider the customer is churned when the survival probability of him is 10%.
+   - **crunchbase**: This subfolder houses data scraped from the Crunchbase website using a pro account. It includes raw CSV files, formatted CSV files, news appearances, and more.
 
-## Customer Churn Prediction
-I aim to implement a machine learning model to accurately predict if the customer will churn or not.
+   - **interest_df**: This subfolder contains Google Trends search results for the 35,000 companies using the `pytrends` library. Multiple files include data for different sets of companies.
 
-### Analysis
+   - **linkedIn**: This subfolder contains files from LinkedIn data received, although it did not match many founders in the final set of zombie companies.
 
-**Churn and Tenure Relationship:**
+   - **tax**: This subfolder contains data scraped from tax websites in California and Idaho, focusing on companies founded in these states.
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/tenure-churn.png" width="600" height="300"/>
-</p>
+## Results
 
-- As we can see the higher the tenure, the lesser the churn rate. This tells us that the customer becomes loyal with the tenure.
+The [**zombie companies**](./zombie_companies.pdf) presentation provides an overview of our approach and the detailed filtering process used to identify potential deadpool startups.
 
-<br />
+<iframe src="./zombie_companies.pdf" width="100%" height="600px"></iframe>
 
-**Tenure Distrbution by Various Services:**
+The [**analysis burn rate.ipynb**](./analysis%20burn%20rate.ipynb) notebook serves as the centerpiece of our analysis. It encompasses all the steps, including the utilization of both existing and external features, to identify potential deadpool startups. The analysis begins by filtering the raw data using existing features and subsequently merges the data frame with external features for in-depth analysis.
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/tenure-dist.png" width="340" height="250"/>
-</p>
 
-- When the customers are new they do not opt for various services and their churning rate is very high. This can be seen in above plot for Streaming Movies and this holds true for all various services.
+## Conclusion
 
-<br />
+These are the key takeaways of the project:
 
-**Internet Service By Contract Type:**
+- **Data-Driven Insights**: Our analysis commenced with a dataset containing 35,000 private companies, enriched with proprietary features such as risk scores and publicly available information like Last Funding Date, Last Funding Amount, and Founded Year. Through the fusion of these features, we initiated the process of identifying potential deadpool startups.
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/internetservice-contract.png" width="360" height="250"/>
-</p>
+- **Burn Rate Analysis**: The application of financial metrics, such as Last Funding Date, Last Funding Amount, and Number of Funding Rounds, allowed us to calculate the burn rate—a critical indicator of a startup's financial health. This step was instrumental in narrowing down our focus to a subset of companies with unique characteristics warranting further investigation.
 
-- Many of the people of who opt for month-to-month Contract choose Fiber optic as Internet service and this is the reason for higher churn rate for fiber optic Internet service type.
+While our project has provided valuable insights into the world of startups, there remain exciting opportunities for further exploration:
 
-<br />
+- Machine Learning Models: Future work could involve the development of machine learning models to automate the identification of deadpool startups. These models could leverage a combination of existing and external features to enhance accuracy.
 
-**Payment method By Contract Type:**
-
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/payment-contract.png" width="500" height="250"/>
-</p>
-
-- People having month-to-month contract prefer paying by Electronic Check mostly or mailed check. The reason might be short subscription cancellation process compared to automatic payment.
-
-<br />
-
-**Monthly Charges:**
-
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/monthlycharges.png" width="300" height="220"/>
-</p>
-
-- As we can see the customers paying high monthly fees churn more.
-
-<br />
-
-### Modelling
-
-For the modelling, I will use tress based Ensemble method as we do not have linearity in this classification problem. Also, we have a class imbalance of 1:3 and to combat it I will assign class weightage of 1:3 which means false negatives are 3 times costlier than false positives. I built a model on 80% of data and validated model on remaining 20% of data keeping in mind that I do not have data leakage. The random forest model has many hyperparameters and I tuned them using Grid Search Cross Validation while making sure that I do not overfit.
-
-The final model resulted in 0.62 F1 score and 0.85 ROC-AUC. The resulting plots can be seen below.
-
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Survival-Analysis-and-Churn-Prediction/blob/master/Images/model_1.png" width="600" height="300"/>
-<img src="https://github.com/archd3sai/Customer-Survival-Analysis-and-Churn-Prediction/blob/master/Images/model_feat_imp.png" width="600" height="400"/>
-
-</p>
-
-From the feature importance plot, we can see which features govern the customer churn.
-
-### Explainability
-
-We can explain and understand the Random forest model using explainable AI modules such as Permutation Importance, Partial Dependence plots and Shap values.
-
-1. Permutation Importance shows feature importance by randomly shuffling feature values and measuring how much it degrades our performance.
-
-<p align="center">
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/eli51.png height=250 width=200>
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/eli52.png height=130 width=200> 
-</p>
-
-2. Partial dependence plot is used to see how churning probability changes across the range of particular feature. For example, in below graph of tenure group, the churn probability decreases at a higher rate if a person is in tenure group 2 compared to 1.
-
-<p align="center">
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/pdp_tenure.png height=250 width=400>
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/pdp_contract.png height=250 width=400> 
-</p>
-
-<p align="center">
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/pdp_monthly_charges.png height=250 width=400>
-<img src=https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/pdp_total_charges.png height=250 width=400> 
-</p>
-
-3. Shap values (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. In below plot we can see that why a particual customer's churning probability is less than baseline value and which features are causing them.
-
-![](https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/shap.png)
-
-## Flask App
-
-I saved the final tuned Random Forest model and deployed it using Flask web app. Flask is a micro web framework written in Python.  It is designed to make getting started quick and easy, with the ability to scale up to complex applications. I saved the shap value explainer tuned using random forest model to show shap plots in app. I have also utilized the cox-proportional hazard model to show survival curve and hazard curve, and to calculate expected customer lifetime value. 
-
-The final app shows churning probability, gauge chart of how severe a customer is and shap values based on customer's data. The final app layout can be seen above.  
+- Real-Time Monitoring: Implementing a real-time monitoring system to continually track the health of startups could offer immediate insights into their operational status.

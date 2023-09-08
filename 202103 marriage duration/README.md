@@ -1,69 +1,47 @@
-# Customer Survival Analysis and Churn Prediction
+# Meta Analysis of letters to Warren/ Doris Buffett
 
-App: https://churn-prediction-app.herokuapp.com/
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Customer attrition, also known as customer churn, customer turnover, or customer defection, is the loss of clients or customers.
+## Overview
 
-Telephone service companies, Internet service providers, pay TV companies, insurance firms, and alarm monitoring services, often use customer attrition analysis and customer attrition rates as one of their key business metrics because the cost of retaining an existing customer is far less than acquiring a new one. Companies from these sectors often have customer service branches which attempt to win back defecting clients, because recovered long-term customers can be worth much more to a company than newly recruited clients.
+Briefly describe the purpose and goals of your data science project. What problem does it address, and what are the key objectives?
 
-Predictive analytics use churn prediction models that predict customer churn by assessing their propensity of risk to churn. Since these models generate a small prioritized list of potential defectors, they are effective at focusing customer retention marketing programs on the subset of the customer base who are most vulnerable to churn.
+## Table of Contents
 
-In this project I aim to perform customer survival analysis and build a model which can predict customer churn. I also aim to build an app which can be used to understand why a specific customer would stop the service and to know his/her expected lifetime value.  
+- [Project Overview](#overview)
+- [Data](#data)
+- [Methods](#methods)
+- [Results](#results)
+- [Conclusion](#conclusion)
+- [Folder Organization](#organization)
+- [Presentation](#presentation)
 
-## Final Customer Churn Prediction App
-<img src=https://github.com/archd3sai/Customer-Survival-Analysis-and-Churn-Prediction/blob/master/app-pic.png>
+## Data
 
-## Project Organization
-```
-.
-├── Images/                             : contains images
-├── static/                             : plots to show gauge chart, hazard and survival curve, shap values in Flask App 
-│   └── images/
-│       ├── hazard.png
-│       ├── surv.png
-│       ├── shap.png
-│       └── new_plot.png
-├── templates/                          : contains html template for flask app
-│   └── index.html
-├── Customer Survival Analysis.ipynb    : Survival Analysis kaplan-Meier curve, log-rank test and Cox-proportional Hazard model
-├── Exploratory Data Analysis.ipynb     : Data Analysis to understand customer data
-├── Churn Prediction Model.ipynb        : Random Forest model to predict customer churn
-├── app.py                              : Flask App
-├── app-pic.png                         : Final App image  
-├── explainer.bz2                       : Shap Explainer
-├── model.pkl                           : Random Forest model
-├── survivemodel.pkl                    : Cox-proportional Hazard model
-├── requirements.txt                    : requirements to run this model
-├── Procfile                            : procfile for app deployment
-├── LICENSE.md                          : MIT License
-└── README.md                           : Report
-```
+Provide information about the data you used for your project. Include details such as the source of the data, format, and any data preprocessing steps. If the data is too large to include in the repository, provide a link to where it can be obtained.
 
-## Customer Survival Analysis
+## Methods
 
-**Survival Analysis:** 
-Survival analysis is generally defined as a set of methods for analyzing data where the outcome variable is the time until the occurrence of an event of interest. The event can be death, occurrence of a disease, marriage, divorce, etc. The time to event or survival time can be measured in days, weeks, years, etc.
+Explain the data analysis methods and techniques used in your project. This may include data cleaning, feature engineering, machine learning algorithms, etc. Provide code snippets or references to relevant code files.
 
-For example, if the event of interest is heart attack, then the survival time can be the time in years until a person develops a heart attack.
+## Results
 
-**Objective:**
-The objective of this analysis is to utilize non-parametric and semi-parametric methods of survival analysis to answer the following questions.
-- How the likelihood of the customer churn changes over time?
-- How we can model the relationship between customer churn, time, and other customer characteristics?
-- What are the significant factors that drive customer churn?
-- What is the survival and Hazard curve of a specific customer?
-- What is the expected lifetime value of a customer?
+Summarize the results of your data analysis. What insights or patterns did you discover? If applicable, include visualizations or graphs that highlight key findings.
 
-**Kaplan-Meier Survival Curve:**
+## Conclusion
 
-<p align="center">
-<img src="https://github.com/archd3sai/Customer-Churn-Analysis-and-Prediction/blob/master/Images/SurvivalCurve.png" width="400" height="300">
-</p>
+Wrap up your project by discussing the implications of your findings. What are the practical takeaways, and how do they relate to the project's goals? Mention any limitations and potential areas for future work.
 
-From above graph, we can say that
-- AS expected, for telcom, churn is relatively low. The company was able to retain more than 60% of its customers even after 72 months.
-- There is a constant decrease in survival probability probability between 3-60 months.
-- After 60 months or 5 years, survival probability decreases with a higher rate. 
+
+## Organization
+
+If there are specific scripts or notebooks that users might find useful, explain how to use them. Include code examples and usage scenarios.
+
+## Presentation
+
+You can find a detailed presentation of this project in [Presentation.pdf](link-to-presentation.pdf).
+
+
 
 **Log-Rank Test:** 
 
